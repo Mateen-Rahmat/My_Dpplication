@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="55dp"
+        android:hint="Name"
+        android:shadowColor="#3490DC"
+        android:textColor="#000000"
+        android:textColorHighlight="#B93490DC"
+        android:textColorHint="#8D3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Female"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="467dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Male"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="499dp"
+
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:hint="Email"
+        android:shadowColor="#3490DC"
+        android:textColor="#000000"
+        android:textColorHighlight="#B93490DC"
+        android:textColorHint="#8D3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="36dp"
+        android:hint="Password"
+        android:shadowColor="#3490DC"
+        android:textColor="#000000"
+        android:textColorHighlight="#B93490DC"
+        android:textColorHint="#8D3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/button_login"
+        android:shadowColor="#3490DC"
+        android:text="Register"
+        android:textColorHighlight="#3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

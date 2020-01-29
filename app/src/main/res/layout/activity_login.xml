@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00F5F0F0"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginn">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Email"
+        android:shadowColor="#3490DC"
+        android:textColor="#000000"
+        android:textColorHighlight="#B93490DC"
+        android:textColorHint="#8D3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="110dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:shadowColor="#3490DC"
+        android:textColor="#000000"
+        android:textColorHighlight="#3490DC"
+        android:textColorHint="#8D3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button_login"
+        android:shadowColor="#3490DC"
+        android:text="Login"
+        android:textColorHighlight="#3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toTopOf="@+id/regist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/regist"
+        android:layout_width="261dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="93dp"
+        android:background="#00FFFFFF"
+        android:text="Don't have an account? Register"
+        android:textColor="#3490DC"
+        android:textColorHighlight="#3490DC"
+        android:textColorLink="#3490DC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+</androidx.constraintlayout.widget.ConstraintLayout>
